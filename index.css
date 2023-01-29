@@ -9,6 +9,11 @@ html, body {
     color: #222;
 }
 
+main {
+    padding: 20px 60px;
+    box-shadow: 0px 0px 30px black;
+
+}
 /* typography */
 
 h1{
@@ -58,7 +63,7 @@ img{
 }
 
 main{
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
 }
 
