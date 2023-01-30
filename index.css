@@ -58,8 +58,10 @@ img{
 }
 
 main{
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
+    padding: 20px 60px;
+    box-shadow: 0px 0px 30px black;
 }
 
 /* modal */
@@ -67,10 +69,10 @@ main{
 .modal {
     display: none;
     position: fixed;
-    right: 0;
-    left: 0;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     height: 420px;
     width: 350px;
@@ -154,3 +156,9 @@ input{
     line-height: 23px;
     margin-bottom: 0;
 }
+
+
+
+/* ------------------ */
+
+
