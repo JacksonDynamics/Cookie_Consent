@@ -9,11 +9,6 @@ html, body {
     color: #222;
 }
 
-main {
-    padding: 20px 60px;
-    box-shadow: 0px 0px 30px black;
-
-}
 /* typography */
 
 h1{
@@ -63,7 +58,7 @@ img{
 }
 
 main{
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -72,10 +67,10 @@ main{
 .modal {
     display: none;
     position: fixed;
+    right: 0;
+    left: 0;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
     height: 420px;
     width: 350px;
