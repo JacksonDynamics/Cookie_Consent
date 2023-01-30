@@ -5,7 +5,7 @@ const modalText = document.getElementById('modal-text')
 
 setTimeout(function(){
     modal.style.display = 'inline'
-}, 1500)
+}, 2000)
 
 modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
@@ -22,7 +22,7 @@ consentForm.addEventListener('submit', function(e){
     </div>`
 
     setTimeout(function(){
-        document.getElementById('uploadText').innerHTML = 
+        document.getElementById('uploadText').innerText = 
             `Making the sale...`
-    }, 2000)
+    }, 3000)
 })
