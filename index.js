@@ -2,6 +2,8 @@ const modal = document.getElementById('modal')
 const modalCloseBtn = document.getElementById('modal-close-btn')
 const consentForm = document.getElementById('consent-form')
 const modalText = document.getElementById('modal-text')
+const declineBtn = document.getElementById('decline')
+const choiceBtns = document.getElementById('modal-choice-btns')
 
 setTimeout(function(){
     modal.style.display = 'inline'
@@ -9,6 +11,10 @@ setTimeout(function(){
 
 modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
+})
+
+declineBtn.addEventListener("mouseover", function(){
+    choiceBtns.classList.toggle('reverse')
 })
 
 consentForm.addEventListener('submit', function(e){
@@ -32,9 +38,8 @@ consentForm.addEventListener('submit', function(e){
     }, 3000)
 
     setTimeout(function(){
-        if (modalCloseBtn.disabled) {
-            modalCloseBtn.disabled = false
-        }
+        modalCloseBtn.disabled = false
+        
         document.getElementById('modal-inner').innerHTML = 
             `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
                 <p>We just sold the rights to your eternal soul.</p>
