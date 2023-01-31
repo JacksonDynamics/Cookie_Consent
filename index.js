@@ -32,6 +32,9 @@ consentForm.addEventListener('submit', function(e){
     }, 3000)
 
     setTimeout(function(){
+        if (modalCloseBtn.disabled) {
+            modalCloseBtn.disabled = false
+        }
         document.getElementById('modal-inner').innerHTML = 
             `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
                 <p>We just sold the rights to your eternal soul.</p>
