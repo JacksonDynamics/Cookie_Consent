@@ -7,7 +7,7 @@ const choiceBtns = document.getElementById('modal-choice-btns')
 
 setTimeout(function(){
     modal.style.display = 'inline'
-}, 10000)
+}, 15000)
 
 modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
